@@ -1,0 +1,7 @@
+0    DSP      2      
+2    PRNS     "   X      Y    (X.Y)\' X\'+Y\'  (X+Y)\' X\'.Y\'\n\n"      
+4    LDA      0      
+6    LDC      0      
+8    STO             
+9    LDA      1      
+11                

@@ -15,7 +15,7 @@ import java.util.regex.Pattern;
 //Welcome to the jankies solution to our problems ever.
 public class NumberFix {
     public static void main(String[] args) {
-        String fileName = "demorgan.txt"; // Replace this with the file you want to convert. Just make a txt file and ctrl + a then ctrl + c
+        String fileName = args[0]; // when executing add the name of your pvm file e.g java NumberFix lsmall.pvm
         int counter = 0;
         String outputFile = "output.txt"; //Dont forget to create a output file
         List<String> linesToWrite = new ArrayList<>();
