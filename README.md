@@ -9,6 +9,7 @@ General Problems you may come across,
 How to use:
 
 1. Javac NumberFix.java
-2. java NumberFix nameofpvmfile.pvm
-3. output.txt with the correct numbering will be created.
+2. java NumberFix nameofpvmfile.pvm outputfilename.pvm
+   optionally you can leave out th outputfilename and the default filename will be used (output.pvm)
+3. outputfilename.pvm with the correct numbering will be created.
 4. Dont judge the jank.

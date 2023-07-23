@@ -17,7 +17,14 @@ public class NumberFix {
     public static void main(String[] args) {
         String fileName = args[0]; // when executing add the name of your pvm file e.g java NumberFix lsmall.pvm
         int counter = 0;
-        String outputFile = "output.txt"; //Dont forget to create a output file
+        // use the name provided by the user if they provided one otherwise use default output file name.
+        String outputFile = "output.pvm";
+        try {
+            outputFile = args[1];
+        } 
+        catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
         List<String> linesToWrite = new ArrayList<>();
         try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
             String line;
